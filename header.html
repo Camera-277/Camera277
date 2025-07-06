@@ -1,0 +1,87 @@
+<div style="height:20px;"></div>
+<div class="header-container" style="margin-top: 35px;">
+
+  
+  <div class="left-header">
+    <a href="index.html"><img id="main-logo" src="images/icon/logo.png" alt="Logo" style="height: 60px; vertical-align: middle; margin-right: 8px;"></a>
+  </div>
+
+  <div class="middle-header">
+    <input type="text" class="js-search-products" placeholder="search products...">
+    <button class="fa fa-search search-icon js-search-icon"></button>
+  </div>
+
+  <div class="right-header">
+
+    <button class="fas fa-sun js-toggle-color"></button>
+
+    <a href="cart-item-list.html" class="cart-link" style="position: relative;">
+      <i class="fas fa-cart-shopping"></i>
+      <div class="js-shopping-icon shopping-icon">0</div>
+    </a>
+
+    <div class="dropdown">
+
+      <a href="#" style="display: block;margin-right: 70px;margin-bottom: 5px;transform: translateY(-2%);"><i
+          class="fas fa-user" style="transform: translateY(6%);"></i>
+
+        <span style="position:absolute; bottom: 12px;" class="show-name-dropdown"></span></a>
+
+
+      <i class="fas fa-bars fa-2x js-dropdown" style="margin-top: 0.3rem;"></i>
+
+    </div>
+
+  </div>
+  <div class="login-header">
+    <ul style="display: flex;align-items: center;justify-content: center; ">
+      <li class="js-admin-login2"><a href="admin.html"><i class="fas fa-user-shield"></i></a></li>
+      <li class="js-login-link"><a href="login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+      <li class="js-signup-link"><a href="signup.html"><i class="fas fa-user-plus"></i>Signup</a></li>
+      <li class="js-logout-link" style="display: none;"><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      <li class="js-profile-link" style="display: none;"><i class="fas fa-user"></i><span class="show-name"></span>
+      </li>
+    </ul>
+
+
+  </div>
+  <div class="js-expand-bar expand-bar">
+    <div class="bar-login-header" style="padding: 2rem;">
+      <ul
+        style="display: flex;align-items: center;justify-content: center; display: flex;flex-direction: column; gap: 40px;">
+        <li class="js-admin-login"><a href="admin.html"><i class="fas fa-user-shield"></i>Admin</a></li>
+        <li class="js-login-link2"><a href="login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+        <li class="js-signup-link2"><a href="signup.html"><i class="fas fa-user-plus"></i>Signup</a></li>
+        <li class="js-logout-link2" style="display: none;"><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </li>
+
+
+        </li>
+      </ul>
+    </div>
+  </div>
+ 
+</div> 
+<div class="header-top-info no-theme-effect" style="width:100vw;position:fixed;top:0;left:0;z-index:1000;background:#1a2233;color:#fff;font-size:15px;line-height:1.6;">
+  <div style="display:flex;align-items:center;justify-content:space-between;max-width:1400px;margin:auto;padding:4px 16px 0 16px;flex-wrap:wrap;">
+    <div style="display:flex;gap:32px;align-items:center;">
+      <span><strong>Hotline:</strong> <a href="tel:0989.123.456" style="color:#fff;text-decoration:underline;">0989.123.456</a></span>
+      <span><strong>Địa chỉ:</strong> 123 Đường ABC, Quận 1, TP.HCM</span>
+    </div>
+    <div class="marquee-container" style="flex:1;overflow:hidden;white-space:nowrap;margin-left:32px;">
+      <marquee behavior="scroll" direction="left" scrollamount="5" style="color:#fff;">
+        <span class="promo-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 6C4.5 7.06087 4.92143 8.07828 5.67157 8.82843C6.42172 9.57857 7.43913 10 8.5 10C9.56087 10 10.5783 9.57857 11.3284 8.82843C12.0786 8.07828 12.5 7.06087 12.5 6C12.5 4.93913 12.0786 3.92172 11.3284 3.17157C10.5783 2.42143 9.56087 2 8.5 2C7.43913 2 6.42143 2.42143 5.67157 3.17157C4.92143 3.92172 4.5 4.93913 4.5 6Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 10L10.7667 13.9267L11.832 11.7713L14.2307 11.926L11.964 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.03461 8L2.76794 11.9267L5.16661 11.7713L6.23194 13.926L8.49861 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> <span>Sản phẩm <strong>Chính hãng - Xuất VAT</strong> đầy đủ</span></span> <span class="promo-item"><svg width="16" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.83337 11.3333C3.83337 11.687 3.97385 12.0261 4.2239 12.2761C4.47395 12.5262 4.81309 12.6667 5.16671 12.6667C5.52033 12.6667 5.85947 12.5262 6.10952 12.2761C6.35956 12.0261 6.50004 11.687 6.50004 11.3333C6.50004 10.9797 6.35956 10.6406 6.10952 10.3905C5.85947 10.1405 5.52033 10 5.16671 10C4.81309 10 4.47395 10.1405 4.2239 10.3905C3.97385 10.6406 3.83337 10.9797 3.83337 11.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.5 11.3333C10.5 11.687 10.6405 12.0261 10.8905 12.2761C11.1406 12.5262 11.4797 12.6667 11.8333 12.6667C12.187 12.6667 12.5261 12.5262 12.7761 12.2761C13.0262 12.0261 13.1667 11.687 13.1667 11.3333C13.1667 10.9797 13.0262 10.6406 12.7761 10.3905C12.5261 10.1405 12.187 10 11.8333 10C11.4797 10 11.1406 10.1405 10.8905 10.3905C10.6405 10.6406 10.5 10.9797 10.5 11.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.83337 11.3334H2.50004V8.66671M1.83337 3.33337H9.16671V11.3334M6.50004 11.3334H10.5M13.1667 11.3334H14.5V7.33337M14.5 7.33337H9.16671M14.5 7.33337L12.5 4.00004H9.16671" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.5 6H5.16667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> <span><strong>Giao nhanh - Miễn phí</strong> cho đơn 300k</span></span> <span class="promo-item"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.16663 8V6C3.16663 5.46957 3.37734 4.96086 3.75241 4.58579C4.12749 4.21071 4.63619 4 5.16663 4H13.8333M13.8333 4L11.8333 2M13.8333 4L11.8333 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13.8333 8V10C13.8333 10.5304 13.6226 11.0391 13.2475 11.4142C12.8724 11.7893 12.3637 12 11.8333 12H3.16663M3.16663 12L5.16663 14M3.16663 12L5.16663 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> <span><strong>Thu cũ</strong> giá ngon - <strong>Lên đời</strong> tiết kiệm</span></span>
+      </marquee>
+    </div>
+  </div>
+</div>
+
+<style>
+  .no-theme-effect, .no-theme-effect * {
+    background: #1a2233 !important;
+    color: #fff !important;
+    fill: #fff !important;
+    border-color: transparent !important;
+    transition: none !important;
+  }
+</style>

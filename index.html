@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ModernShop</title>
+  <link rel="stylesheet" href="style/product.css">
+  <link rel="stylesheet" href="style/header-footer.css">
+  <link rel="stylesheet" href="style/general.css">
+  <link rel="stylesheet" href="style/home.css">
+
+
+
+</head>
+<!-- SwiperJS CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+
+<body>
+  <!-- Khởi tạo Swiper -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const swiper = new Swiper('.mySwiper', {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        speed: 800,
+        effect: 'slide'
+      });
+    });
+  </script>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <div id="login-popup" class="popup-overlay">
+    <div class="popup-box">
+      <p style="color: rgb(15, 13, 48);">Please log in to add items to your cart.</p>
+      <button
+        style="color: rgb(14, 7, 39);background-color: rgb(220, 214, 214);padding: 8px 15px; border: none;border-radius: 5px;margin-top: 0.5rem;"
+        onclick="
+     document.getElementById('login-popup').style.display = 'none';
+    ">Close</button>
+    </div>
+  </div>
+
+  <header id="header-placeholder">
+
+  </header>
+
+
+<section class="carousel-section">
+  <div class="swiper mySwiper" style="width: 100%; max-width: 1200px; margin: 110px auto 40px auto; border-radius: 10px; overflow: hidden;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/icon/banner dahua.jpg" alt="Banner 1" style="width: 100%; height: auto;"></div>
+      <div class="swiper-slide"><img src="images/icon/banner hkbvisionn.jpg" alt="Banner 2" style="width: 100%; height: auto;"></div>
+      <div class="swiper-slide"><img src="images/icon/banner-camera-imou.jpg" alt="Banner 3" style="width: 100%; height: auto;"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+  <section class="products">
+    <div class="products-header">
+      <div class="products-left-header">
+        <h1>Featured Products</h1>
+      </div>
+      <div class="products-right-header js-products-right-header">
+        <button class="product-btn active" data-category="all">All</button>
+        <button class="product-btn" data-category="Camera Giám Sát">Camera Giám Sát</button>
+        <button class="product-btn" data-category="Thiết bị ghi hình">Thiết bị ghi hình</button>
+        <button class="product-btn" data-category="Ổ Cứng">Ổ Cứng</button>
+        <button class="product-btn" data-category="Phụ Kiện">Phụ Kiện</button>
+        <button class="product-btn" data-category="Khác">Khác</button>
+      </div>
+    </div>
+  </section>
+
+  <section style="display: flex;align-items: center;justify-content: center;">
+    <div class="product-item-grid js-product-item-grid">
+
+
+
+
+    </div>
+  </section>
+
+  <footer class="footer-section" id="footer-placeholder">
+
+  </footer>
+  <script src="script/shared/include.js" type="module"></script>
+  <script src="script/home.js" type="module"></script>
+
+  <style>
+.carousel-section {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+.swiper.mySwiper {
+  width: 96vw;
+  max-width: 98%;
+  margin: 0 auto 32px auto;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  background: #fff;
+  padding: 0;
+  box-sizing: border-box;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.swiper-slide img {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0;
+}
+@media (max-width: 900px) {
+  .swiper.mySwiper {
+    max-width: 100vw;
+    width: 99vw;
+  }
+  .swiper-slide img {
+    height: 180px;
+    max-height: 180px;
+  }
+}
+</style>
+
+</body>
+
+
+</html>
