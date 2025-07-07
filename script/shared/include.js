@@ -140,3 +140,4 @@ function updateLogoColor() {
       document.getElementById('footer-placeholder').innerHTML = data;
     });
 });
+
